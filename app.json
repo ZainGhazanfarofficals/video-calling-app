@@ -33,16 +33,14 @@
       "permissions": [
         "CAMERA",
         "RECORD_AUDIO",
-        "android.permission.BLUETOOTH",
-        "android.permission.BLUETOOTH_CONNECT",
-        "android.permission.BLUETOOTH_ADMIN",
-        "android.permission.WAKE_LOCK",
-        "android.permission.ACCESS_NETWORK_STATE",
-        "android.permission.CAMERA",
-        "android.permission.INTERNET",
-        "android.permission.MODIFY_AUDIO_SETTINGS",
-        "android.permission.RECORD_AUDIO",
-        "android.permission.SYSTEM_ALERT_WINDOW"
+        "WAKE_LOCK",
+        "ACCESS_NETWORK_STATE",
+        "INTERNET",
+        "MODIFY_AUDIO_SETTINGS",
+        "SYSTEM_ALERT_WINDOW",
+        "BLUETOOTH",
+        "BLUETOOTH_ADMIN",
+        "BLUETOOTH_CONNECT"
       ],
       "edgeToEdgeEnabled": true,
       "predictiveBackGestureEnabled": false,
@@ -60,6 +58,13 @@
         {
           "android": {
             "minSdkVersion": 24
+          },
+          "ios": {
+            "deploymentTarget": "15.1",
+            "useFrameworks": "static",
+            "pods": [
+              "pod 'RNScreens', :path => './node_modules/react-native-screens'"
+            ]
           }
         }
       ],
@@ -74,14 +79,8 @@
       [
         "react-native-permissions",
         {
-          "iosPermissions": [
-            "Camera",
-            "Microphone"
-          ],
-          "androidPermissions": [
-            "RECORD_AUDIO",
-            "CAMERA"
-          ]
+          "iosPermissions": ["Camera", "Microphone"],
+          "androidPermissions": ["RECORD_AUDIO", "CAMERA"]
         }
       ]
     ],

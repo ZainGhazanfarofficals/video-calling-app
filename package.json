@@ -48,5 +48,6 @@
     "@types/react": "~18.2.79",
     "react-test-renderer": "18.2.0",
     "typescript": "~5.9.2"
-  }
+  },
+  "packageManager": "npm@10.9.3"
 }

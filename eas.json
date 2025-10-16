@@ -15,7 +15,6 @@
       "developmentClient": true,
       "distribution": "internal",
       "env": {
-        "EXPO_NODE_VERSION": "20.14.0",
         "EXPO_PUBLIC_CLERK_PUBLISHABLE_KEY": "pk_test_c3VyZS10cm91dC04NS5jbGVyay5hY2NvdW50cy5kZXYk",
         "EXPO_PUBLIC_GET_STREAM_API_KEY": "xpnyra7c56j2",
         "EXPO_PUBLIC_API": "https://www.example.com"
